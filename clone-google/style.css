@@ -26,9 +26,15 @@ main{
 #search input{
     width: 50%;
     border-radius: 25px;
-    padding: 15px;/*En todos los lados*/
+    padding: 15px 38px;/*En todos los lados*/
     font-size: 16px;
     border: 1px solid #eee;
+    background: url('mic.png') no-repeat scroll 571px 9px;
+    background-size: 18px;
+}
+
+#search input:focus{
+    outline: none;
 }
 
 #apps{
@@ -138,11 +144,12 @@ label{
 label::before{
     content: "";
     position: absolute;
-    left: 10px;
+    left: 8px;
     top: 0;
     bottom: 0;
-    width: 8px;
-    background-image: url('lupa2.png');
-
+    width: 21px;
+    background-image: url(lupa.svg);
+    height: 21px;
+    fill:#cecece;
 }
 
