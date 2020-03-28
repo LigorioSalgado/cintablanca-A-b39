@@ -35,6 +35,12 @@ main{
 
 #search input:focus{
     outline: none;
+    box-shadow: 0 1px 6px 0px rgba(32,33,36,0.28);
+
+}
+
+#search input:hover{
+    box-shadow: 0 1px 6px 0px rgba(32,33,36,0.28);
 }
 
 #apps{
