@@ -24,12 +24,12 @@ main{
 }
 
 #search input{
-    width: 50%;
+    width: 500px;
     border-radius: 25px;
     padding: 15px 38px;/*En todos los lados*/
     font-size: 16px;
     border: 1px solid #eee;
-    background: url('mic.png') no-repeat scroll 571px 9px;
+    background: url('mic.png') no-repeat scroll 550px 9px;
     background-size: 18px;
 }
 
