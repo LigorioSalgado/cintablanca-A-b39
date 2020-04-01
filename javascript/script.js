@@ -160,59 +160,102 @@
 //     alert("No eres humano 👽");
 // }
 
-var miArreglo = [1,2,3,4,5,6,7,8,9,0];
-var miArreglo2 = ["Edwin","Ale","Hugo","Uriel","Elena"];
-var miArreglo3 = [1.5,9.3,7.7,2.4];
-var miArreglo4 = [true,false,false,true];
-var miarreglo5 = [true,"Edwin",2,"Hugo",3.4];
+// var miArreglo = [1,2,3,4,5,6,7,8,9,0];
+// var miArreglo2 = ["Edwin","Ale","Hugo","Uriel","Elena"];
+// var miArreglo3 = [1.5,9.3,7.7,2.4];
+// var miArreglo4 = [true,false,false,true];
+// var miarreglo5 = [true,"Edwin",2,"Hugo",3.4];
 
-var arregloCine = [
-    [1,0,1,1,1,1,0,0,1],
-    [1,0,1,1,1,1,0,0,1]
-    [1,0,1,1,1,1,0,0,1]
-    [1,0,1,1,1,1,0,0,1]
-];
+// var arregloCine = [
+//     [1,0,1,1,1,1,0,0,1],
+//     [1,0,1,1,1,1,0,0,1]
+//     [1,0,1,1,1,1,0,0,1]
+//     [1,0,1,1,1,1,0,0,1]
+// ];
 
-var arregloFrutas = ["manzana","pera"];
-console.log(arregloFrutas);
-var nuevaFruta =  prompt("¿Agrega una nueva fruta?");
-arregloFrutas.push(nuevaFruta); // Mete un nuevo elemento al arreglo
-// console.log("Con push",arregloFrutas)
-// console.log("Una pocision especifica", arregloFrutas[1]) //Asi sabemos la pocision del elemnto en el arreglo
-// var ultimaFruta = arregloFrutas.pop()
-// console.log("Con pop",arregloFrutas)
-// console.log("ultima fruta",ultimaFruta)
+// var arregloFrutas = ["manzana","pera"];
+// console.log(arregloFrutas);
+// var nuevaFruta =  prompt("¿Agrega una nueva fruta?");
+// arregloFrutas.push(nuevaFruta); // Mete un nuevo elemento al arreglo
+// // console.log("Con push",arregloFrutas)
+// // console.log("Una pocision especifica", arregloFrutas[1]) //Asi sabemos la pocision del elemnto en el arreglo
+// // var ultimaFruta = arregloFrutas.pop()
+// // console.log("Con pop",arregloFrutas)
+// // console.log("ultima fruta",ultimaFruta)
 
-// Ciclo for - while
+// // Ciclo for - while
 
-for(var i=0; i < 5; i++){
-    console.log("Primer for",i)
+// for(var i=0; i < 5; i++){
+//     console.log("Primer for",i)
+// }
+// console.log("Valor final de i", i)
+
+
+// for(var j=1; j < 20; j*=2){
+//     console.log("Segundo for",j)
+// }
+
+// console.log("Valor final de j",j)
+
+// for(var i=0; i < arregloFrutas.length; i++ ){
+//     console.log("Mi fruta en la pocision "+i+" Es igual a "+arregloFrutas[i])
+// }
+
+// var arregloNumeroPar = [67,122,45,22,34,87,100,23,1234,5,9,12]
+
+// for(var i=0; i < arregloNumeroPar.length;i++){
+
+//     if( arregloNumeroPar[i] % 2 === 0){
+//         console.log("Este es un numero par"+arregloNumeroPar[i]+" Pocision: "+i)
+//     }
+
+// }
+
+
+// var arreglo =  [8,93,44,1,2]
+
+
+// Ciclo While
+
+var encendido = false;
+
+while(encendido){
+
+    var apagar = prompt('¿Quieres apagar?')
+
+    if(apagar === "si"){
+        encendido = false;
+    }
 }
-console.log("Valor final de i", i)
 
+var saldo = 100;
 
-for(var j=1; j < 20; j*=2){
-    console.log("Segundo for",j)
-}
+while ( saldo < 100){
 
-console.log("Valor final de j",j)
+    var agregar =  prompt('¿Quieres agregar dineo?')
 
-for(var i=0; i < arregloFrutas.length; i++ ){
-    console.log("Mi fruta en la pocision "+i+" Es igual a "+arregloFrutas[i])
-}
-
-var arregloNumeroPar = [67,122,45,22,34,87,100,23,1234,5,9,12]
-
-for(var i=0; i < arregloNumeroPar.length;i++){
-
-    if( arregloNumeroPar[i] % 2 === 0){
-        console.log("Este es un numero par"+arregloNumeroPar[i]+" Pocision: "+i)
+    if(agregar === "si"){
+        var cantidad = prompt("Cuanto quieres agregar?")
+        saldo += parseFloat(cantidad)
+        alert("llevas: "+saldo)
+    }else{
+        alert("Adios 🥱 te quedaste con "+ saldo)
+        break;
+    }
+    if(saldo > 100){
+        alert("Ya eres millonario 🤑")
     }
 
 }
 
+var nuevoArreglo = [3,2,6,1,8,4,6,4,5]
 
+var contador = 10;
 
+while(contador < nuevoArreglo.length){
+    console.log("Iterando arreglo desde while elemento",nuevoArreglo[contador] );
+    contador++;
+}
 
 
 
