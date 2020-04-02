@@ -1,0 +1,36 @@
+.header{
+    width: 100%;
+    background-image: url("../images/bg.png");
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    height: 700px;
+}
+
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top:0;
+    background-color: rgba(244, 244, 244, 0.79);
+}
+
+.description{
+   position: absolute;
+   top: 30%;
+   padding: 2rem;
+}
+
+.description button{
+    background-color: rgba(248, 217, 42, 0.986);
+    color: #000;
+}
+
+.description p{
+    color: #666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+    text-align: justify;
+}
