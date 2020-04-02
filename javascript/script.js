@@ -92,52 +92,52 @@
 
 // // Operadores Logicos
 
-// var edad = 18;
+var edad = 18;
 
-// // Comparación por valor
+// Comparación por valor
 
-// console.log("La comparación por valor de edad es :", edad == 18); //True
+console.log("La comparación por valor de edad es :", edad == 18); //True
 
-// // Comparacion por tipo y valor
-// console.log("La comparación por tipo de edad es :", edad === "18"); //False
+// Comparacion por tipo y valor
+console.log("La comparación por tipo de edad es :", edad === "18"); //False
 
-// // Diferente por valor
+// Diferente por valor
 
-// console.log("La diferencia en edad es", edad != 18) // false
-// // Diferencia por tipo
-// console.log("La diferencia en edad es", edad !== "18") // true
+console.log("La diferencia en edad es", edad != 18) // false
+// Diferencia por tipo
+console.log("La diferencia en edad es", edad !== "18") // true
 
-// // mayor que y menor que
+// mayor que y menor que
 
-// console.log("Mayor que edad", 20 > edad); // true
+console.log("Mayor que edad", 20 > edad); // true
 
-// console.log("Menor que edad ", 15 < edad); // true
+console.log("Menor que edad ", 15 < edad); // true
 
-// console.log("Prueba de fuego menor que", 18 < edad) // false
+console.log("Prueba de fuego menor que", 18 < edad) // false
 
-// // mayor igual y menor igual
+// mayor igual y menor igual
 
-// console.log("Mayor igual ", 18 >= edad) // true
-// console.log("Menor igual ", 18 <= edad) // true
+console.log("Mayor igual ", 18 >= edad) // true
+console.log("Menor igual ", 18 <= edad) // true
 
-// // Operadores and (Y)operadores  OR (O)
+// Operadores and (Y)operadores  OR (O)
 
-// // Operador Y &&
+// Operador Y &&
 
-// var edad = 26;
-// var genero = "M";
+var edad = 26;
+var genero = "M";
 
-// console.log(" Operador and  que si sucede", edad >= 18 && genero == "M" ) // True
-// console.log(" Operador and  que no sucede", edad >= 18 && genero == "F" ) // False
-// console.log(" Operador and  que no sucede", edad <= 18 && genero == "M" ) // False
-// console.log(" Operador and  que no sucede", edad <= 18 && genero == "F" ) // False
+console.log(" Operador and  que si sucede", edad >= 18 && genero == "M" ) // True
+console.log(" Operador and  que no sucede", edad >= 18 && genero == "F" ) // False
+console.log(" Operador and  que no sucede", edad <= 18 && genero == "M" ) // False
+console.log(" Operador and  que no sucede", edad <= 18 && genero == "F" ) // False
 
-// // Operador O  ||
+// Operador O  ||
 
-// console.log(" Operador or  que si sucede", edad >= 18 || genero == "M" ) // True
-// console.log(" Operador or  que si sucede", edad >= 18 || genero == "F" ) // True
-// console.log(" Operador or  que si sucede", edad <= 18 || genero == "M" ) // True
-// console.log(" Operador or  que no sucede", edad <= 18 || genero == "F" ) // False
+console.log(" Operador or  que si sucede", edad >= 18 || genero == "M" ) // True
+console.log(" Operador or  que si sucede", edad >= 18 || genero == "F" ) // True
+console.log(" Operador or  que si sucede", edad <= 18 || genero == "M" ) // True
+console.log(" Operador or  que no sucede", edad <= 18 || genero == "F" ) // False
 
 
 // // Setencia de control IF
@@ -146,19 +146,19 @@
 // // == comparación por valor
 // // === comparacion por tipo y valor
 
-// var edad = prompt("¿Cuel es tu edad?");
+var edad = prompt("¿Cuel es tu edad?");
 
-// if(edad >= 18){
-//     alert("Ya eres todo un señor 🤠");
-// }else if(edad == 15){
-//     alert("Para cuando la fiesta 🌚");
-// }else if(edad < 18){
-//     alert("Estas chiquito 👶🏻")
-// }
-// else{
-//     //Cualquier otra cosa que no estoy contemplando
-//     alert("No eres humano 👽");
-// }
+if(edad >= 18){
+    alert("Ya eres todo un señor 🤠");
+}else if(edad == 15){
+    alert("Para cuando la fiesta 🌚");
+}else if(edad < 18){
+    alert("Estas chiquito 👶🏻")
+}
+else{
+    //Cualquier otra cosa que no estoy contemplando
+    alert("No eres humano 👽");
+}
 
 // var miArreglo = [1,2,3,4,5,6,7,8,9,0];
 // var miArreglo2 = ["Edwin","Ale","Hugo","Uriel","Elena"];
@@ -248,15 +248,22 @@ while ( saldo < 100){
 
 }
 
-var nuevoArreglo = [3,2,6,1,8,4,6,4,5]
+var nuevoArreglo = [-5,-2,-6,0,-1]
 
-var contador = 10;
 
-while(contador < nuevoArreglo.length){
-    console.log("Iterando arreglo desde while elemento",nuevoArreglo[contador] );
-    contador++;
+var valorMas;
+
+for(var i=0; i < nuevoArreglo.length; i++){
+ var x = nuevoArreglo[i]
+ console.log("Pocision en i",i)
+ for(var j=i; j < nuevoArreglo.length; j++){
+    console.log("comparando"+ nuevoArreglo[i] +" con "+ nuevoArreglo[j])
+
+ }
+
 }
 
+console.log(valorMas)
 
 
 
