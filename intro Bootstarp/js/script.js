@@ -33,17 +33,20 @@
         
         for(let i=0; i < inputs.length; i++ ){
             if(inputs[i].value == ""){
-                let nameInput  =  inputs[i].getAttribute('name')
+                let nameInput  = inputs[i].getAttribute('name')
                 faltantes.push(nameInput)
             }
         }
+
         if(faltantes.length > 0){
+
             h5Title.innerHTML  = "¡Fallo!"
             h5Text.innerHTML = "Falta: <br>"
             let textos  = "";
             for(let i=0; i < faltantes.length; i++){
                 textos = textos + faltantes[i]+ "<br>"
             }
+            console.log(textos);
             h5Text.innerHTML =  h5Text.innerHTML + textos
            
         }else{

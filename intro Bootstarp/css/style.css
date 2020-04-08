@@ -155,6 +155,11 @@ html,body{
     padding: 1rem;
 }
 
+small{
+    color:red;
+    visibility: hidden;
+}
+
 /* Media Query */
 
 @media(max-width:470px){ /* Maximo hasta 470 px  max-width <= 470   */
