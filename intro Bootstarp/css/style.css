@@ -147,3 +147,23 @@ html,body{
     font-size: 16px;
 }
 
+.footer{
+    width: 100%;
+    margin-top: 4rem;
+    position: relative;
+    background-color: rgb(253, 229, 9);
+    padding: 1rem;
+}
+
+/* Media Query */
+
+@media(max-width:470px){ /* Maximo hasta 470 px  max-width <= 470   */
+    .description{
+        top:15%;
+        padding: 1rem;
+    }
+
+    /*.photo{
+        display: none;
+    }*/
+}
