@@ -1,65 +1,99 @@
-// "use strict"; //Vamos a usar javascript de manera stricta
-// //iife -> Immediatly-invoked Function expresion
-// //xss -> cross scripting 
-// (function(){
+"use strict"; //Vamos a usar javascript de manera stricta
+//iife -> Immediatly-invoked Function expresion
+//xss -> cross scripting 
+(function(){
 
-//     // Selector
-//     let inputName = document.getElementById('name')//Busca un elemento de html por su id
-//     // inputName.value = "Edwin Salgado"
-//     console.log(inputName);
+    // Selector
+    let inputName = document.getElementById('name')//Busca un elemento de html por su id
+    // inputName.value = "Edwin Salgado"
+    console.log(inputName);
 
-//     let inputs = document.querySelectorAll('.form-control') // trae varios elemento dentro del dom
-//     console.log(inputs)
+    let inputs = document.querySelectorAll('.form-control') // trae varios elemento dentro del dom
+    console.log(inputs)
 
-//     let inputQuery = document.querySelector('input[placeholder="Your name"]'); //Busca por cualquier cosa diferente a ID
+    let inputQuery = document.querySelector('input[placeholder="Your name"]'); //Busca por cualquier cosa diferente a ID
 
-//     console.log(inputQuery)
+    console.log(inputQuery)
 
-//     //document.getElementsByClassName()
-//     //document.getElementsByName()
-//     //document.getElementsByTagName()
+    //document.getElementsByClassName()
+    //document.getElementsByName()
+    //document.getElementsByTagName()
 
-//     // Eventos
-//     inputName.addEventListener('input',function(event){ //Funcion anonima
-//         console.log(event.target.value)
-//     })
+    // Eventos
+    inputName.addEventListener('input',function(event){ //Funcion anonima
+        console.log(event.target.value)
+    })
 
-//     let sendButton = document.getElementById('sendButton');
+    let sendButton = document.getElementById('sendButton');
 
-//     sendButton.addEventListener('click',function(){
-//         let h5Title = document.querySelector('h5.modal-title');
-//         let h5Text = document.querySelector('h5.modal-text');
-//         let faltantes = []
+    sendButton.addEventListener('click',function(){
+        let inputname = document.getElementById('name');
+        let inputemail = document.getElementById('email');
+        let inputText = document.getElementById('text');
+        let smallname = document.getElementById('smallName');
+        let smallemail = document.getElementById('smallEmail');
+        let smalltext = document.getElementById('smallText');
+
+        if(inputName.value == ""){
+            smallname.classList.remove('d-none')
+        }else{
+            smallname.classList.add('d-none')
+        }
+
+        if(inputemail.value == ""){
+            smallemail.classList.remove('d-none')
+        }else{
+            smallemail.classList.add('d-none')
+        } 
         
-//         for(let i=0; i < inputs.length; i++ ){
-//             if(inputs[i].value == ""){
-//                 let nameInput  = inputs[i].getAttribute('name')
-//                 faltantes.push(nameInput)
-//             }
-//         }
+        if(inputText.value == ""){
+            smalltext.classList.remove('d-none')
+        }else{
+            smalltext.classList.add('d-none')
+        }
 
-//         if(faltantes.length > 0){
+        if(inputText.value != "" && inputname.value != "" && inputemail.value != ""){
+            inputname.value = "";
+            inputText.value = "";
+            inputemail.value = "";
+        }
 
-//             h5Title.innerHTML  = "¡Fallo!"
-//             h5Text.innerHTML = "Falta: <br>"
-//             let textos  = "";
-//             for(let i=0; i < faltantes.length; i++){
-//                 textos = textos + faltantes[i]+ "<br>"
-//             }
-//             console.log(textos);
-//             h5Text.innerHTML =  h5Text.innerHTML + textos
+    })
+
+    // sendButton.addEventListener('click',function(){
+    //     let h5Title = document.querySelector('h5.modal-title');
+    //     let h5Text = document.querySelector('h5.modal-text');
+    //     let faltantes = []
+        
+    //     for(let i=0; i < inputs.length; i++ ){
+    //         if(inputs[i].value == ""){
+    //             let nameInput  = inputs[i].getAttribute('name')
+    //             faltantes.push(nameInput)
+    //         }
+    //     }
+
+    //     if(faltantes.length > 0){
+
+    //         h5Title.innerHTML  = "¡Fallo!"
+    //         h5Text.innerHTML = "Falta: <br>"
+    //         let textos  = "";
+    //         for(let i=0; i < faltantes.length; i++){
+    //             textos = textos + faltantes[i]+ "<br>"
+    //         }
+    //         console.log(textos);
+    //         h5Text.innerHTML =  h5Text.innerHTML + textos
            
-//         }else{
-//             h5Title.innerHTML = "¡Exito!"
-//             h5Text.innerHTML = "Se han enviado los datos con exito"
-//         }
+    //     }else{
+    //         h5Title.innerHTML = "¡Exito!"
+    //         h5Text.innerHTML = "Se han enviado los datos con exito"
+    //     }
 
-//     })
-
-
+    // })
 
 
-// })()
+
+
+})()
 
 // Ciclo For
 ///let arreglos = []

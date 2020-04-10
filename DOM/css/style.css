@@ -1,0 +1,12 @@
+html,body{
+    height: 100%;
+}
+
+main{
+    
+    padding: 4rem;
+}
+.footer{
+    width: 100%;
+    position: relative;
+}
